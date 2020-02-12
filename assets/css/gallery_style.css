@@ -58,6 +58,11 @@ h3 {  text-align: center; font-size: 16px; }
 .container-fluid{ margin:15px auto; }
 
 /* Menu */
+#burgermenu {
+	width:11%; 
+	margin: 0;
+}
+
 span.fa	{ width: 100%; text-align: center; }
 .site-header .main-navigation ul {
   padding: 0;
@@ -436,6 +441,10 @@ a.menu-toggle-btn {
 	
 .templatemo_footer { background: #343536; color: #69a9e6; padding: 20px 0px; width: 100%; margin-top: 100px; }
 .templatemo_footer .hex_footer	{ float: left; margin-right: 5px; height: 40px;}
+/*------------------------------------------------------
+	Gallery Selecting
+--------------------------------------------------------*/
+
 
 
 /* Smartphones (portrait and landscape) ----------- */
