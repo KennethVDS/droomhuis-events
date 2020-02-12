@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Droomhuis vzw</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/png" href="assets/images/LOGO_BLACK.png"/>
+		<link rel="stylesheet" href="assets/css/mediatags.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul class="responsive_menu" >
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn" onclick="dropdownmenu()">Home </button>
+								<div class="dropdown-content" id="myDropdown">
+								<a href="#one">Music</a>
+								<a href="#two">People</a>
+								<a href="#work">Events</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Music</button>
+								<div class="dropdown-content" id="myDropdown">
+									<a href="#one">Our vision</a>
+									<a href="https://www.droomhuismerch.be/">Webshop</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn" onclick="dropdownmenu()">People</button>
+								<div class="dropdown-content" id="myDropdown">
+									<a href="#one">Our crew</a>
+									<a href="views/gallery/index.html">Our Partners</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn" onclick="dropdownmenu()">Events</button>
+								<div class="dropdown-content" id="myDropdown">
+									<a href="views/gallery/index.html">Party Portfolio</a>
+									<a href="https://www.facebook.com/pg/droomhuisevents/photos">Facebook</a>
+									<a href="https://www.droomhuismerch.be/">Tickets</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<button class="dropbtn" onclick="dropdownmenu()">Contact</button>
+								<div class="dropdown-content" id="myDropdown">
+									<a href="https://goo.gl/maps/buYypwurjFu9S2RPA">Location</a>
+									<a href="views/ContactForm/index.html">Contact</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<video autoplay muted loop id="mainscreenvideo">
+					<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
+					Your browser does not support HTML5 video.
+				  </video>
+				  <div class="picture" id="droomhuislogo">
+					  <img src="assets/images/LOGO_BLACK.jpg" style="width: 100%" alt="logo">
+				  </div>
+				  <div id="videoModal" class="modal">
+					<!-- Modal content -->
+					<span class="close">&times;</span>
+					<div class="modal-content">
+					  <video autoplay muted loop id="modalvideo" style="width: 95%">
+						<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
+						Your browser does not support HTML5 video.
+					  </video>
+					</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Music</h2>
+					</header>
+					<p>A little party never killed nobody.<br>
+					That being said we strive for all-time good vibes and experiences for all ages.<br>
+					Always growing and renewing to give it all back to you. <br>
+					Hope you stick around!</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>People</h2>
+					</header>
+					<p>We are a young, driven & passionate team of friends that love what we do and do what we love. <br>
+					Always on the look for the next new challenge and reinventing ourselves day by day. <br>
+					Not afraid to step on new grounds and explore things that have never been done before.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Events</h2>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="assets/images/fulls/one.jpg" class="image fit"><img src="assets/images/fulls/onexs.jpg" title="Open Air" alt="Open Air" /></a>
+							</article>
+							<article class="from-right">
+								<a href="assets/images/fulls/two.jpg" class="image fit"><img src="assets/images/fulls/twoxs.jpg" title="Pop-up Cafe" alt="Pop-up Cafe" /></a>
+							</article>
+							<article class="from-left">
+								<a href="assets/images/fulls/three.jpg" class="image fit"><img src="assets/images/fulls/threexs.jpg" title="NYE All-in" alt="NYE All-in" /></a>
+							</article>
+							<article class="from-right">
+								<a href="assets/images/fulls/four.jpg" class="image fit"><img src="assets/images/fulls/fourxs.jpg" title="The Get-Down" alt="The Get-Down" /></a>
+							</article>
+							<article class="from-left">
+								<a href="assets/images/fulls/five.jpg" class="image fit"><img src="assets/images/fulls/fivexs.jpg" title="Open Air" alt="Open Air" /></a>
+							</article>
+							<article class="from-right">
+								<a href="assets/images/fulls/six.jpg" class="image fit"><img src="assets/images/fulls/sixxs.jpg" title="Pop-up Cafe" alt="Pop-up Cafe" /></a>
+							</article>
+						</div>
+						<div id="partygallery"><a href="views/gallery/index.html" style="text-decoration: none;"><span class="label">Check our party portfolio</span> </a></div>
+						<a href="https://www.facebook.com/pg/droomhuisevents/photos" class="icon brands fa-facebook-f"><span> Or facebook</span></a>
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+					<header>
+						<img src="assets/images/LOGO_GIF.gif" style="width: 135px;">
+						<p>Don't be afraid to get in touch or check our social media accounts.</p>
+						<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/droomhuisevents/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/drmhsevents/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/bram-merckx-292a6a11b/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<a href="views/ContactForm/index.html">Or more info here!</a>
+						<p>feel free to visit our <a href="https://www.droomhuismerch.be/">webshop</a> as well</p>
+					</header>
+					<div class="box" id="contactbox">
+						<form method="post" action="assets/form/form.php">
+							<div class="fields">
+								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+								<div class="field half"><input type="email" name="email" placeholder="E-mail" /></div>
+								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Droomhuis 2020 </li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="controller/jquery.min.js"></script>
+			<script src="controller/jquery.poptrox.min.js"></script>
+			<script src="controller/jquery.scrolly.min.js"></script>
+			<script src="controller/jquery.scrollex.min.js"></script>
+			<script src="controller/browser.min.js"></script>
+			<script src="controller/breakpoints.min.js"></script>
+			<script src="controller/util.js"></script>
+			<script src="controller/main.js"></script>
+
+	</body>
+</html>
