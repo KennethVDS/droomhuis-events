@@ -27,8 +27,8 @@ body.blurred > * {
 
 .lightbox-loading {
   background: url(../images/gallery/loading.gif) center center no-repeat;
-  width: 31px;
-  height: 31px;
+  width: 77;
+  height: 77px;
   margin: -16px 0 0 -16px;
   position: absolute;
   top: 48%;
@@ -126,7 +126,7 @@ body.blurred > * {
 * markup.
 *******************************************************/
 .ls-preloader {
-  background: url(../images/gallery/loading.gif) #f2f2f2 no-repeat center 75px;
+  background: url(../images/gallery/loading.gif) no-repeat center 75px;
   opacity: 1;
   /* Do not edit below this line */
   width: 100%;
