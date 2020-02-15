@@ -1,9 +1,12 @@
 <?php
 class form {
-    function indexform(){
+    function contactform() {
         if (isset($_POST[submit])) {
-            $name = $_POST['name'];
+            $name = $_POST['fullname'];
             $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $company = $_POST['company'];
+            $interest = $_POST['interest'];
             $message = $_POST['message'];
             $formcontent="From: $name \n Message: $message";
             $subject = "Contact Form";
@@ -17,13 +20,5 @@ class form {
                 echo 'Caught exception: ',  $e->getMessage(), "\n";
             }
         }
-    }
-    function contactform() {
-        $name = $_POST['fullname'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $company = $_POST['company'];
-        $interest = $_POST['interest'];
-        $message = $_POST['message'];
     }
 }
