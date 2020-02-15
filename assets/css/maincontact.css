@@ -152,7 +152,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding-top: 200px;
   background: transparent;
   position: relative;
   z-index: 1;
