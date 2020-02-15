@@ -1164,25 +1164,7 @@ input, select, textarea {
 
 		}
 
-/* Icons */
 
-	ul.icons {
-		cursor: default;
-	}
-
-		ul.icons li {
-			display: inline-block;
-		}
-
-		ul.icons a {
-			display: inline-block;
-			width: 2em;
-			height: 2em;
-			line-height: 2em;
-			text-align: center;
-			border: 0;
-		}
-		
 /* Navbar & Dropdown*/
   
   .dropdown {
@@ -2293,41 +2275,44 @@ input, select, textarea {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
+		align-items: block;
+		-moz-justify-content: space-evenly;
+		-webkit-justify-content: space-evenly;
+		-ms-justify-content: space-evenly;
+		justify-content: space-evenly;
 		position: relative;
-		margin: 0;
+		margin: auto;
 		line-height: 1em;
 		padding: 1.5em;
 		background: #000000;
 		color: #69A9E6;
 		overflow: hidden;
+		list-style-type: none;
 	}
 
 		#footer > * {
 			margin-bottom: 0;
 		}
 
-		#footer a {
-			color: inherit;
-		}
-
 			#footer a:hover {
-				color: #b9babb;
+				color: #1968b8;
 			}
+			/* Icons */
+				.icons {
+					display: inline;
+					cursor: default;
+					list-style-type: none;
+				}
 
-		#footer ul.menu {
-			margin: 0;
-		}
-
-			#footer ul.menu li {
-				border-left-color: #69A9E6;
-				font-size: 0.9em;
-			}
-
+					.icons a {
+						float: right;
+						width: 2em;
+						height: 2em;
+						line-height: 2em;
+						text-align: center;
+						border: 0;
+					}
+		
 		@media screen and (max-width: 1000px) {
 
 			#footer {
@@ -2353,7 +2338,6 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer ul.menu li {
-				border-left: none;
 				display: block;
 				line-height: inherit;
 				margin: 0.25em 0 0 0;
