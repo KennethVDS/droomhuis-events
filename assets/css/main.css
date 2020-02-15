@@ -624,7 +624,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: rgba(229, 230, 231, 0.66);
+		background: rgba(229, 230, 231, 0.88);
 		color: #39454b;
 		padding: 2em;
 	}
@@ -2279,7 +2279,7 @@ input, select, textarea {
 		-moz-justify-content: space-evenly;
 		-webkit-justify-content: space-evenly;
 		-ms-justify-content: space-evenly;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		position: relative;
 		margin: auto;
 		line-height: 1em;
