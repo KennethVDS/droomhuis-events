@@ -847,54 +847,6 @@ input, select, textarea {
 		display: block;
 	}
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"],
-	select,
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		color: #69A9E6;
-		display: block;
-		width: 100%;
-		padding: 0.65em 0.75em;
-		background: none;
-		border: solid 2px #e5e6e7;
-		color: inherit;
-		border-radius: 0.5em;
-		outline: none;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		input[type="tel"]:focus,
-		input[type="search"]:focus,
-		input[type="url"]:focus,
-		select:focus,
-		textarea:focus {
-			border-color: #9ac8e9;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"],
-	select {
-		line-height: 1.35em;
-	}
-
 	textarea {
 		min-height: 8em;
 	}
@@ -2007,13 +1959,12 @@ input, select, textarea {
 					background-position: center center;
 					position: relative;
 					max-width: 480px;
-					width: 98%;
+					width: 77%;
 					height: auto;
 					margin: auto;
 					border-bottom: 0.7px solid #69A9E6;
 					border-top: 0.7px solid #69A9E6;
 					padding: 20px;
-					border-radius: 20px;
 					-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 					-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 					box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -2231,9 +2182,6 @@ input, select, textarea {
 			display: none !important;
 		}
 
-		.main.style2 .button.anchored {
-			display: none;
-		}
 
 		.main.style2 .content {
 			width: 100%;

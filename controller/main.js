@@ -79,7 +79,7 @@
 				baseZIndex: 10001,
 				useBodyOverflow: false,
 				usePopupEasyClose: false,
-				overlayColor: '#1f2328',
+				overlayColor: '#000000',
 				overlayOpacity: 0.65,
 				usePopupDefaultStyling: false,
 				usePopupCaption: true,
