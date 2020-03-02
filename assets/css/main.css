@@ -1950,7 +1950,12 @@ input, select, textarea {
 				.main.style1 > #mainscreenvideo {
 					display: none;
 				}
-				 
+				 body {
+					background-image: url(../images/aesthetic_is_dead.gif);
+					background-size: auto;
+					background-repeat: fill;
+					justify-content: center;
+				 }
 				.main.style1 > .picture {
 					display: block;
 					background-color: #ffffff;
@@ -1965,9 +1970,9 @@ input, select, textarea {
 					border-bottom: 0.7px solid #69A9E6;
 					border-top: 0.7px solid #69A9E6;
 					padding: 20px;
-					-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-					-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-					box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+					-webkit-box-shadow:0 1px 4px rgba(109, 253, 241, 0.877), 0 0 40px rgba(109, 253, 241,, 0.1) inset;
+					-moz-box-shadow:0 1px 4px rgba(109, 253, 241, 0.877), 0 0 40px rgba(109, 253, 241, 0.1) inset;
+					box-shadow:0 1px 4px rgba(109, 253, 241, 0.877), 0 0 40px rgba(109, 253, 241, 0.1) inset;
 				}
 				.picture:before, .picture:after
 				{
