@@ -655,8 +655,16 @@ and (max-width : 559px)	{
 		margin-top: 10px; 
 		width: 100%; 
 	}
+
 	
  }
+ #returnhome {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 .content { display: none; height: auto; }
 .homepage	{ display: block; }
 .leftalign	{ float: left; }

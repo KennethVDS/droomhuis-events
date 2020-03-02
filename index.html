@@ -10,58 +10,62 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Header -->
 			<header id="header">
 				<nav>
-					<ul class="responsive_menu" >
-						<li>
-							<div class="dropdown">
-								<button class="dropbtn" onclick="dropdownmenu()">Home </button>
-								<div class="dropdown-content" id="myDropdown">
-								<a href="#one">Music</a>
-								<a href="#two">People</a>
-								<a href="#work">Events</a>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<ul class="responsive_menu" >
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Home </button>
+									<div class="dropdown-content" id="myDropdown">
+									<a href="#one">Music</a>
+									<a href="#two">People</a>
+									<a href="#work">Events</a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-									<button class="dropbtn" onclick="dropdownmenu()">Music</button>
-								<div class="dropdown-content" id="myDropdown">
-									<a href="#one">Our vision</a>
-									<a href="https://www.droomhuismerch.be/">Droomshop</a>
+							</li>
+							<li>
+								<div class="dropdown">
+										<button class="dropbtn" onclick="dropdownmenu()">Music</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="#one">Our vision</a>
+										<a href="https://www.droomhuismerch.be/">Droomshop</a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<button class="dropbtn" onclick="dropdownmenu()">People</button>
-								<div class="dropdown-content" id="myDropdown">
-									<a href="#one">Droomcrew</a>
-									<a href="views/gallery/index.html">Droompartners</a>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">People</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="#one">Droomcrew</a>
+										<a href="views/gallery/index.html">Droompartners</a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<button class="dropbtn" onclick="dropdownmenu()">Events</button>
-								<div class="dropdown-content" id="myDropdown">
-									<a href="views/gallery/index.html">Droomportfolio</a>
-									<a href="https://www.droomhuismerch.be/">Tickets</a>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Events</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="views/gallery/index.html">Droomportfolio</a>
+										<a href="https://www.droomhuismerch.be/">Tickets</a>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown">
-								<button class="dropbtn" onclick="dropdownmenu()">Contact</button>
-								<div class="dropdown-content" id="myDropdown">
-									<a href="https://goo.gl/maps/buYypwurjFu9S2RPA">Location</a>
-									<a href="views/ContactForm/index.html">Contact</a>
+							</li>
+							<li>
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Contact</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="https://goo.gl/maps/buYypwurjFu9S2RPA">Location</a>
+										<a href="views/ContactForm/index.html">Contact</a>
+									</div>
 								</div>
-							</div>
-						</li>
-					</ul>
+							</li>
+						</ul>
+					</div>
+				  </div>
+				  <a><img style="cursor: pointer;" id="maindropdownlogo" src="./assets/images/translogo.png" onclick="openNav()"></a>
 				</nav>
 			</header>
 		<!-- Intro -->
@@ -70,9 +74,6 @@
 					<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
 					Your browser does not support HTML5 video.
 				  </video>
-				  <div class="picture" id="droomhuislogo">
-					  <img src="assets/images/LOGO_BLACK.jpg" style="width: 100%" alt="logo">
-				  </div>
 				  <div id="videoModal" class="modal">
 					<!-- Modal content -->
 					<span class="close">&times;</span>
