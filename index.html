@@ -15,75 +15,29 @@
 				<div id="myNav" class="overlay">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<div class="overlay-content">
-						<ul class="responsive_menu" >
-							<li>
-								<div class="dropdown">
-									<button class="dropbtn" onclick="dropdownmenu()">Home </button>
-									<div class="dropdown-content" id="myDropdown">
-									<a href="#one">Music</a>
-									<a href="#two">People</a>
-									<a href="#work">Events</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="dropdown">
-										<button class="dropbtn" onclick="dropdownmenu()">Music</button>
-									<div class="dropdown-content" id="myDropdown">
-										<a href="#one">Our vision</a>
-										<a href="https://www.droomhuismerch.be/">Droomshop</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="dropdown">
-									<button class="dropbtn" onclick="dropdownmenu()">People</button>
-									<div class="dropdown-content" id="myDropdown">
-										<a href="#one">Droomcrew</a>
-										<a href="views/gallery/index.html">Droompartners</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="dropdown">
-									<button class="dropbtn" onclick="dropdownmenu()">Events</button>
-									<div class="dropdown-content" id="myDropdown">
-										<a href="views/gallery/index.html">Droomportfolio</a>
-										<a href="https://www.droomhuismerch.be/">Tickets</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="dropdown">
-									<button class="dropbtn" onclick="dropdownmenu()">Contact</button>
-									<div class="dropdown-content" id="myDropdown">
-										<a href="https://goo.gl/maps/buYypwurjFu9S2RPA">Location</a>
-										<a href="views/ContactForm/index.html">Contact</a>
-									</div>
-								</div>
-							</li>
-						</ul>
+						<a href="#">About</a>
+						<a href="#">Services</a>
+						<a href="#">Clients</a>
+						<a href="#">Contact</a>
 					</div>
 				  </div>
-				  <a><img style="cursor: pointer;" id="maindropdownlogo" src="./assets/images/translogo.png" onclick="openNav()"></a>
+				  <img style="cursor: pointer;" class="maindropdownlogo" id="maindropdownlogo" src="./assets/images/translogo.png" >
 				</nav>
 			</header>
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
-				<video autoplay muted loop id="mainscreenvideo">
-					<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
-					Your browser does not support HTML5 video.
-				  </video>
-				  <div id="videoModal" class="modal">
-					<!-- Modal content -->
-					<span class="close">&times;</span>
-					<div class="modal-content">
-					  <video autoplay controls muted id="modalvideo" style="width: 95%">
-						<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
-						Your browser does not support HTML5 video.
-					  </video>
+					<div class="content box style1">
+						<div id="videoModal" class="modal">
+							<!-- Modal content -->
+							<span class="close">&times;</span>
+							<div class="modal-content">
+							  <video autoplay controls muted loop id="modalvideo">
+								<source src="assets/images/Droomhuisvid.mp4" type="video/mp4" alt="video">
+								Your browser does not support HTML5 video.
+							  </video>
+							</div>
+							</div>
 					</div>
-					<a href="#one" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- One -->
@@ -97,7 +51,6 @@
 					Always growing and renewing to give it all back to you. <br>
 					Hope you stick around!</p>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Two -->
@@ -110,7 +63,6 @@
 					Always on the look for the next new challenge and reinventing ourselves day by day. <br>
 					Not afraid to step on new grounds and explore things that have never been done before.</p>
 				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Work -->
