@@ -5,7 +5,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" type="image/png" href="assets/images/LOGO_BLACK.png"/>
-		<link rel="stylesheet" href="assets/css/mediatags.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -15,13 +14,57 @@
 				<div id="myNav" class="overlay">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<div class="overlay-content">
-						<a href="#">About</a>
-						<a href="#">Services</a>
-						<a href="#">Clients</a>
-						<a href="#">Contact</a>
+						<ul class="responsive_menu" >
+							<li id="mainMenuList">
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Home </button>
+									<div class="dropdown-content" id="myDropdown">
+									<a href="#one">Music</a>
+									<a href="#two">People</a>
+									<a href="#work">Events</a>
+									</div>
+								</div>
+							</li>
+							<li id="mainMenuList">
+								<div class="dropdown">
+										<button class="dropbtn" onclick="dropdownmenu()">Music</button>
+									<div class="dropdown-content">
+										<a href="#one">Our vision</a>
+										<a href="https://www.droomhuismerch.be/">Shop</a>
+									</div>
+								</div>
+							</li>
+							<li id="mainMenuList">
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">People</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="#one">Crew</a>
+										<a href="views/gallery/index.html">Partners</a>
+									</div>
+								</div>
+							</li>
+							<li id="mainMenuList">
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Events</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="views/gallery/index.html">Portfolio</a>
+										<a href="https://www.droomhuismerch.be/">Tickets</a>
+									</div>
+								</div>
+							</li>
+							<li id="mainMenuList">
+								<div class="dropdown">
+									<button class="dropbtn" onclick="dropdownmenu()">Contact</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="https://goo.gl/maps/buYypwurjFu9S2RPA">Location</a>
+										<a href="views/ContactForm/index.html">Contact</a>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				  </div>
-				  <img style="cursor: pointer;" class="maindropdownlogo" id="maindropdownlogo" src="./assets/images/translogo.png" >
+				  <img style="cursor: pointer;" class="maindropdownlogo" id="maindropdownlogo" onclick="image()" src="./assets/images/translogo.png" >
 				</nav>
 			</header>
 		<!-- Intro -->

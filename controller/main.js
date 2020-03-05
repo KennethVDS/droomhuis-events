@@ -73,14 +73,33 @@
 	// Header
 		/* Open */
 		$(".maindropdownlogo").click(function() {
-			$(".myNav").height("100%");
+			$("#myNav").height("100%");
 		});
 		
 		/* Close */
 		$(".closebtn").click(function() {
-			$(".myNav").height("0%");
+			$("#myNav").height("0");
 		});
-	
+
+		function dropdownmenu() {
+			document.getElementsByClassName("dropdown-content").classList.toggle("show");
+		  }
+		  // Close the dropdown if the user clicks outside of it
+		  window.onclick = function(e) {
+			if (!e.target.matches('.dropbtn')) {
+			var myDropdown = document.getElementsByClassName("dropdown-content");
+			  if (myDropdown.classList.contains('show')) {
+				myDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		  
+		  $(".dropdown-content").each(function() {
+			$(this).css({
+			   'left' : '50%',
+			   'transform': 'translateX(-50%)'
+			});
+		});
 	// Gallery.
 		$window.on('load', function() {
 
@@ -245,19 +264,4 @@
 				modal.style.display = "none";
 			}
 			}
-			
-			function dropdownmenu() {
-				document.getElementById("myDropdown").classList.toggle("show");
-			  }
-			  
-			  // Close the dropdown if the user clicks outside of it
-			  window.onclick = function(e) {
-				if (!e.target.matches('.dropbtn')) {
-				var myDropdown = document.getElementById("myDropdown");
-				  if (myDropdown.classList.contains('show')) {
-					myDropdown.classList.remove('show');
-				  }
-				}
-			  }
-			  
 })(jQuery);
