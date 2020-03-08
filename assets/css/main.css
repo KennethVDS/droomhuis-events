@@ -639,23 +639,36 @@ input, select, textarea {
 
 	}
 	.box > #mainArticle {
+		display: flex;
 		position: relative;
 		left: 0;
 		float: left;
-		max-width: 50%;
+		width: 50%;
+	}
+	.box > #mainArticle h2 {
+		font-size: 1.5em;
+		margin-top: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		align-content: center;
+		align-items: center;
+		text-align: center;
 	}
 		.box > :last-child {
 			margin-bottom: 0;
 		}
 
 		.box > #videoModal {
-			display: block;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
 			position: relative;
 			float: right;
 			z-index: 1;
 			overflow: auto;
 			width: 50%;
-			max-width: 768px;
 			background-color: rgb(0,0,0); 
 			background-color: rgba(0,0,0,0.4); 
 		}
@@ -664,7 +677,11 @@ input, select, textarea {
 			background-color: #ffffff;
 			margin: 0;
 			padding: 3px;
-			width: 100%;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			text-align: center;
 		  }
 		  #videoModal #modalvideo {
 			  width: 100%;
@@ -678,12 +695,18 @@ input, select, textarea {
 			.box {
 				padding: 1em;
 			}
-				.box.style2 {
-					padding: 1.5em 1.25em 1.5em 1.25em;
-				}
-				.box > .modal {
-					width: 100%;
-				}
+			.box.style2 {
+				padding: 1.5em 1.25em 1.5em 1.25em;
+			}
+			.box > .modal {
+				width: 100%;
+			}
+			.box > #mainArticle {
+				width: 100%;
+			}
+			.box > #videoModal {
+				width: 100%;
+			}
 		}
 
 /* Button */
@@ -1113,7 +1136,6 @@ input, select, textarea {
 	font-size: 0.9em;  
 	border: none;
 	outline: none;
-	color: #000000;
 	padding: 4px 4px;
 	background-color: inherit;
 	font-family: inherit;
@@ -1784,7 +1806,7 @@ input, select, textarea {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgba(231, 231, 231, 0.88);
+	background-color: rgba(0, 0, 0, 0.88);
 	overflow-x: hidden;
 	transition: 444ms;
   }
@@ -1796,7 +1818,9 @@ input, select, textarea {
 	text-align: center;
 	margin-top: 30px;
   }
-  
+  .overlay > .dropbtn {
+	  color: #ffffff;
+  }
   .overlay .closebtn {
 	position: absolute;
 	color: #69a9e6;
@@ -1807,7 +1831,9 @@ input, select, textarea {
   }
   
   @media screen and (max-height: 450px) {
-	.overlay a {font-size: 20px}
+	.overlay a {
+		font-size: 20px
+	}
 	.overlay .closebtn {
 	font-size: 40px;
 	top: 15px;
@@ -1901,14 +1927,6 @@ input, select, textarea {
 
 		.main.fullscreen {
 			min-height: 100%;
-		}
-
-		.main.style1 {
-			-moz-align-items: center;
-			-webkit-align-items: center;
-			-ms-align-items: center;
-			align-items: center;
-			text-align: center;
 		}
 
 			.main.style1 h2 {

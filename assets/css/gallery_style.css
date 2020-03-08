@@ -157,6 +157,10 @@ a.menu-toggle-btn {
 	display: block;
 	max-width: 300px;
 }
+#selectortag{
+	color: #69a9e6;
+}
+
 .templaterow	{ margin: 0px 30px; }
 .servicerow	{ margin: 0px; }
 .blok	{ position: absolute; }
