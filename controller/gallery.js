@@ -8,15 +8,15 @@ jQuery(document).ready(function($){
 		var eventSelection = $(this).attr('at'); 
 		var url = '../../assets/images/gallery/' + eventSelection + '/';
 		var smallUrl = '../../assets/images/gallery/' + eventSelection + '/square/';
-		for (var image = 1; image <= 36; image++) {
+		for (var image = 1; image <= 18; image++) {
 			galleryPicture = url + image + '.jpg';
 			smallPicture = smallUrl + image + '.jpg';
-			
+			$('.overlay').append(`<a href="${galleryPicture}"  data-rel="lightbox" class="fa fa-expand"></a>`);
+			$('.hexagon-in2').css("background-image", "url(" + smallPicture +")");
 			console.log(smallPicture);
 			console.log(galleryPicture);
 		};
-		$('.overlay').append(`<a href="${galleryPicture}"  data-rel="lightbox" class="fa fa-expand"></a>`);
-		$('.hexagon-in2').css(`background-image: url("${smallPicture}")`);
+		
 		return false;
 	});
 
