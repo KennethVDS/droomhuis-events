@@ -622,37 +622,46 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: rgba(229, 230, 231, 0.88);
-		color: #39454b;
-		padding: 2em;
+		color: #000000;
+		background-color: #ffffff;
+		opacity: 0.77;
 	}
+	.box > .modal {
+		position: relative;
+		float: right;
 
+	}
+	.box > #mainArticle {
+		position: relative;
+		left: 0;
+		float: left;
+		width: 100%;
+	}
 		.box > :last-child {
 			margin-bottom: 0;
 		}
 		.box.style1 {
+			display: block;
 			padding: 0;
 			position: relative;
 			top: 0;
-			
+			width: 100px;
 		}
 		.box > #videoModal {
-			display: none; /* Hidden by default */
-			position: relative; /* Stay in place */
-			z-index: 1; /* Sit on top */
+			display: block;
+			position: relative;
+			z-index: 1;
 			left: 0;
 			top: 0;
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-			align-content: center;
+			overflow: auto;
+			background-color: rgb(0,0,0); 
+			background-color: rgba(0,0,0,0.4); 
 		}
 
 		#videoModal > .modal-content {
-			background-color: #838282;
+			background-color: #ffffff;
 			margin: 0;
-			padding: 7px;
-			border: 1px solid #888;
+			padding: 3px;
 			width: 100%;
 		  }
 		  #videoModal #modalvideo {
@@ -667,17 +676,12 @@ input, select, textarea {
 			.box {
 				padding: 1em;
 			}
-				.box.style1 {
-					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color:  rgba(229, 230, 231, 0.88);
-					color: #39454b;
-				}
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color:  rgba(229, 230, 231, 0.88);
-					color: #39454b;
 				}
-
+				.box > .modal {
+					width: 100%;
+				}
 		}
 
 /* Button */
@@ -1163,7 +1167,7 @@ input, select, textarea {
 	font-size: 0.9em;  
 	border: none;
 	outline: none;
-	color: #868383;
+	color: #000000;
 	padding: 4px 4px;
 	background-color: inherit;
 	font-family: inherit;
@@ -1181,6 +1185,8 @@ input, select, textarea {
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	font-size: 0.9em;  
+	font-family: inherit;
 	}
 	
 	.dropdown-content a {
@@ -1832,8 +1838,7 @@ input, select, textarea {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0, 0.9);
+	background-color: rgba(231, 247, 252, 0.88);
 	overflow-x: hidden;
 	transition: 444ms;
   }
@@ -1848,7 +1853,7 @@ input, select, textarea {
   
   .overlay .closebtn {
 	position: absolute;
-	color: #838282;
+	color: #69a9e6;
 	top: 20px;
 	right: 45px;
 	font-size: 60px;
@@ -1875,7 +1880,6 @@ input, select, textarea {
 		height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(12, 12, 12, 0.1);
 		font-family: 'Oswald';
-		font-weight: bold;
 	}
 
 		#header nav {
@@ -1886,14 +1890,14 @@ input, select, textarea {
 		#header nav #maindropdownlogo {
 			position: relative;
 			display: block;
-			height: 2.5em;
+			height: 3em;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 				#header nav ul li a {
 					position: relative;
 					display: block;
-					color: #ffffff;
+					color: #69a9e6;
 					margin: auto;
 					width: 150px;
 					height: auto;
@@ -1907,7 +1911,7 @@ input, select, textarea {
 				}
 				
 				#header nav ul li a:hover{
-					border-bottom: 2px solid;
+					border-bottom: 2px solid #69a9e6;
 				}
 				
 
@@ -2264,11 +2268,14 @@ input, select, textarea {
 
 /* Intro */
 	#intro {
-		background-image: url(../images/aesthetic_is_dead.gif);
+		background-color: #ffffff;
 		background-size: cover;
 		background-repeat: fill;
 		background-position: center;
 		height: 45%;
+		-moz-box-shadow:    inset  0 -10px 10px -10px grey;
+		-webkit-box-shadow: inset  0 -10px 10px -10px grey;
+		box-shadow:        inset  0 -10px 10px -10px grey;
 	}
 
 

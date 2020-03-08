@@ -60,6 +60,7 @@ h3 {  text-align: center; font-size: 16px; }
 /* Menu */
 .site-header .main-navigation .container {
 	width: 100%;
+	height: 3em;
   }
 
 span.fa	{ width: 100%; text-align: center; }
@@ -116,7 +117,6 @@ span.fa	{ width: 100%; text-align: center; }
 }
 
 a.menu-toggle-btn {
-  padding: 12px 0;
   display: block;
   color: white;
   font-size: 24px;
@@ -160,19 +160,6 @@ a.menu-toggle-btn {
 .blok	{ position: absolute; }
 .hex	{ width: 20%; float: left; }
 .hex-offset	{ margin-left: 10%; }
-.hexagon2, .hexagonteam {
-	position: absolute;
-	width: 200px;
-	height: 400px;
-	top: -85px;
-}
-
-.hexagonteam {
-	position: absolute;
-	width: 200px;
-	height: 350px;
-	top: -85px;
-}
 
 .hexagon {
 	overflow: hidden;
@@ -226,57 +213,11 @@ a.menu-toggle-btn {
 }
 
 .hexagon-in2:hover {
-	webkit-box-shadow: inset 0 0 0 200px rgba(36,36,36, 0.7);
 	box-shadow: inset 0 0 0 200px rgba(36,36,36, 0.7);
 }
 .s_top	{ margin-top: 8%; }
 
-.hexteam .gallery-item .overlay1 a {
-    margin-top: 78%;
-    background: none;
-    border: none;
-    position: static;
-    display: inline-block;    
-    margin-left: 10px;
-}
-
 .overlaytxt	{ margin-top: 105%; text-align: center; width: 100%; }
-
-.hexagon-a {
-	margin-top: 63px;
-	position: absolute;
-	z-index: 300;
-	margin-left: -65px;
-}
-.hexagon-a a {
-  margin: 0 auto;
-  width: 26%;
-  display: block;
-  position: relative;
-  
-}
-.hexagon-a a.hlinktop:hover .hexa-a {
-  background: #69a9e6;
-  color: #fff;
-}
-
-.hexagonservices {
-	height: 160px;
-	margin-top: 60px;
-}
-.hexagonservices a.hlinkbott {
-  margin: 0 auto;
-  display: block;
-  min-width: 120px;
-  position: relative;
-}
-
-.hexagonservices a.hlinkbott:hover .hexa {
-  background: #69a9e6;
-}
-.servicetext	{ float: left; margin-top: 230px; }
-.hexservices	{ width: 20%; margin-top: -10%; }
-.hexservices p{ text-align: center; }
 
 /* mid hexa */
 .hexa-a {
@@ -290,7 +231,6 @@ a.menu-toggle-btn {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 42px;
   -webkit-transition: all 0.2s ease-in-out;
-  -webkit-transition-delay: 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -356,7 +296,6 @@ a.menu-toggle-btn {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 14px;
   -webkit-transition: all 0.2s ease-in-out;
-  -webkit-transition-delay: 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -393,8 +332,6 @@ a.menu-toggle-btn {
 --------------------------------------------------------*/
 .gallery-item {
   background-color: white;
-  -webkit-box-shadow: inset 0 0 1px #666;
-  -moz-box-shadow: inset 0 0 1px #666;
   margin-bottom: 30px;
   /*position: relative;*/
   overflow: hidden;
@@ -494,14 +431,6 @@ and (max-width : 419px)	{
 	.hex-top3	{ margin-top: 100px; }
 	.gallerytop	{ margin-top: 32%; }
 	.loadmore	{ margin-top: 53%; }
-	.servicetxt	{ margin-top: 230px; }
-	.servicecol2	{ margin-top: 10%; float: left; }
-	.contactmap	{ width: 250px; height: 292px; float: left; }
-	.contactmap img{ position: absolute; width: 250px; height: 292px; top: 0px; left: 15px; }
-	#map {
-    width: 100%;
-    height: 292px;
-	}
 	.blok	{ left: 13%; }
 }
 
@@ -521,8 +450,6 @@ and (max-width : 559px)	{
 	.hex-top3		{ margin-top: 130px; }
 	.gallerytop	{ margin-top: 32%; }
 	.loadmore	{ margin-top: 50%; }
-	.servicetxt	{ margin-top: 230px; }
-	.servicecol2	{ margin-top: 7%; float: left; }
 	.blok	{ left: 22%; }
 	
 }
@@ -542,8 +469,6 @@ and (max-width : 559px)	{
 	.hex-top3		{ margin-top: 180px; }
 	.gallerytop	{ margin-top: 33%; }
 	.loadmore	{ margin-top: 48%; }
-	.servicetxt	{ margin-top: 230px; }
-	.servicecol2	{ margin-top: 7%; float: left; }
 	.blok	{ left: 33%; }
 
 }
@@ -551,9 +476,6 @@ and (max-width : 559px)	{
 	.footer .hex_footer	{ float: left; }
 	.hexagon-a	{ margin-left: 5px; }
 	.hexagon-a a	{ min-width: 190px; }
-	.hexagonservices a.hlinkbott	{ width: 200px; }
-	.servicerow	{margin: -10% 30px 0px 30px; }
-	.hexservices	{ width: 100%; margin-top: 5%; float: left; }
 
 }
 @media(min-width:768px) and (max-width: 991px){ 
@@ -570,9 +492,6 @@ and (max-width : 559px)	{
 	.s_top	{ margin-top: 14%; }
 	.hexagon-a	{ margin-left: 5px; }
 	.hexagon-a a	{ min-width: 190px; }
-	.hexagonservices a.hlinkbott	{ width: 200px; }
-	.servicerow	{ margin: -10% 30px 0px 30px; }
-	.hexservices	{ width: 100%; margin-top: 5%; }
 	.blok	{ left: 33%; }
 
 	}
@@ -597,14 +516,6 @@ and (max-width : 559px)	{
 @media(min-width:992px) and (max-width: 1200px){
 	.hexagon-a	{ margin-left: 5px; }
 	.hexagon-a a	{ min-width: 140px; }
-	.hexagonservices a.hlinkbott	{ width: 150px; }
-	.servicerow	{ margin: 0px 30px; }
-	.contactmap	{ width: 250px; height: 292px; float: left; }
-	.contactmap img{ position: absolute; width: 250px; height: 292px; top: 0px; left: 15px; }
-	#map {
-   	 width: 100%;
-    height: 292px;
-	}
 	}
 @media(min-width:992px) and (max-width: 1390px){
 	.gallerytop	{ margin-top: 15%; }
@@ -624,8 +535,6 @@ and (max-width : 559px)	{
 	.hex-top1	{ margin-top: 180px; }
 	.hexagon-a	{ left: 35%; }
 	.hexagon-a a	{ min-width: 190px; }
-	.hexagonservices a.hlinkbott	{ width: 200px; }
-	.servicerow	{ margin: 30px 30px; }
 }
 
 @media only screen and (max-width: 1000px) {

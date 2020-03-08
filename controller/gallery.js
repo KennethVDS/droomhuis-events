@@ -10,130 +10,23 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-	$( window ).load(function() {
-	  $("#menu-container .products").hide();
-	});
-
-	$(".main_menu a.home").addClass('active');
+	function imagelink() {
+		var eventSelection = $('gallery').attr('at');
+		var url = '../../assets/images/gallery/' + eventSelection + '/';
+		var smallUrl = '../../assets/images/gallery/' + eventSelection + '/square/';
+		for (var image = 0; image <= 36; image++) {
+			let galleryPicture = url + image + '.jpg';
+			let smallPicture = smallUrl + image + '.jpg';
+			$('.overlay').append(`<a href='${galleryPicture} '  data-rel="lightbox" class="fa fa-expand"></a>`);
+			$('.hexagon-in2').css(`background-image: url(${smallPicture});`);
+			console.log(smallPicture);
+			console.log(galleryPicture);
+		}
+	}; 
 
 	$(".main_menu a.home, .responsive_menu a.home").click(function(){
 		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page2, .responsive_menu a.page2").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$('#content').html('whatever');
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page3, .responsive_menu a.page3").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page4, .responsive_menu a.page4").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page5, .responsive_menu a.page5").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);loadScript();
-		return false;
-	});
-
-	$(".main_menu a.page6, .responsive_menu a.page6").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page7, .responsive_menu a.page7").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page8, .responsive_menu a.page8").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(eventSelection);
-		return false;
-	});
-
-	$(".main_menu a.page8, .responsive_menu a.page8").click(function(){
-		$("#menu-container .homepage").addClass("animated fadeInDown").show();
-		$(this).addClass('active');
-		$(".main_menu a.home, .responsive_menu a.home").removeClass('active');
-		$(".main_menu a.page2, .responsive_menu a.page2").removeClass('active');
-		$(".main_menu a.page3, .responsive_menu a.page3").removeClass('active');
-		$(".main_menu a.page4, .responsive_menu a.page4").removeClass('active');
-		$(".main_menu a.page5, .responsive_menu a.page5").removeClass('active');
-		$(".main_menu a.page6, .responsive_menu a.page6").removeClass('active');
-		$(".main_menu a.page7, .responsive_menu a.page7").removeClass('active');
-		var eventSelection = $(this).attr('at');
-		console.log(`${eventSelection}`);
+		imagelink();
 		return false;
 	});
 
