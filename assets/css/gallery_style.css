@@ -3,7 +3,7 @@ html, body {
 	padding: 0px; 
 	margin: 0px; 
 	color: #e7e7e7;
-	background: #000000;
+	background: #ffffff;
 	font-size: 12px;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1	{	font-size: 1.5em;
 	color: #ffffff;
-	background: #343537;
+	background: #ffffff;
 	padding: 10px 8px;
 	float: left;
 	}
@@ -100,9 +100,9 @@ span.fa	{ width: 100%; text-align: center; }
 .site-header .main-navigation ul li a {
   padding: 20px 20px;
   display: inline-block;
-  color: white;
+  color: #000000;
   font-size: 16px;
-  background: #000000;
+  background: #ffffff;
   text-transform: uppercase;
 }
 .site-header .main-navigation ul li a.active {
@@ -124,7 +124,7 @@ a.menu-toggle-btn {
 
 .responsive-menu {
   display: block;
-  background: #343536;
+  background: #ffffff;
   width: 100%;
   float: center;
 }
@@ -136,13 +136,15 @@ a.menu-toggle-btn {
 .responsive_menu ul li {
   display: block !important;
   margin: 0 !important;
-  border-bottom: 1px solid #424242;
 }
 .responsive_menu ul li a {
   padding: 15px 0 !important;
   display: block !important;
+  cursor: pointer;
 }
-
+.responsive_menu ul li a:hover {
+	color: #69a9e6;
+  }
 #burgermenu {
 	width: auto; 
 	margin: 0;
@@ -213,7 +215,7 @@ a.menu-toggle-btn {
 }
 
 .hexagon-in2:hover {
-	box-shadow: inset 0 0 0 200px rgba(36,36,36, 0.7);
+	box-shadow: inset 0 0 0 200px rgba(179, 177, 177, 0.7);
 }
 .s_top	{ margin-top: 8%; }
 
@@ -225,7 +227,7 @@ a.menu-toggle-btn {
   min-width: 110px;
   height: 0;
   padding-bottom: 57.7%;
-  background: #393e42;
+  background: #e7e7e7;
   position: absolute;
   color: #69a9e6;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -399,13 +401,13 @@ a.menu-toggle-btn {
 
 .loadmore button{ 
 	border: none; 
-	background: #000000; 
+	background: #ffffff; 
 	color: #69a9e6; 
 	text-transform: uppercase;
 	width: 100%;
 	}
 	
-.footer { background: #343536; color: #69a9e6; padding: 20px 0px; width: 100%; margin-top: 100px; }
+.footer { background: #ffffff; color: #69a9e6; padding: 20px 0px; width: 100%; margin-top: 100px; }
 .footer .hex_footer	{ float: left; margin-right: 5px; height: 40px;}
 /*------------------------------------------------------
 	Gallery Selecting
@@ -579,7 +581,7 @@ and (max-width : 559px)	{
 
 #returnhome button{ 
 	border: none; 
-	background: #000000; 
+	background: #ffffff; 
 	color: #69a9e6; 
 	text-transform: uppercase;
 	width: 100%;

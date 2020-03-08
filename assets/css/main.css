@@ -1838,7 +1838,7 @@ input, select, textarea {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgba(231, 247, 252, 0.88);
+	background-color: rgba(231, 231, 231, 0.88);
 	overflow-x: hidden;
 	transition: 444ms;
   }
@@ -1903,7 +1903,7 @@ input, select, textarea {
 					height: auto;
 					text-align: center;
 					align-items: center;
-					font-size: 0.84em;
+					font-size: 0.88em;
 					-webkit-transition: all 0.2s ease-in;
 					-moz-transition: all 0.2s ease-in;
 					-o-transition: all 0.2s ease-in;
