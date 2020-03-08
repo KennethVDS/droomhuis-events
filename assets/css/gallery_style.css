@@ -142,7 +142,7 @@ a.menu-toggle-btn {
   display: block !important;
   cursor: pointer;
 }
-.responsive_menu ul li a:hover {
+.responsive_menu ul li a:active {
 	color: #69a9e6;
   }
 #burgermenu {
