@@ -159,9 +159,9 @@ a.menu-toggle-btn {
 }
 #selectortag{
 	color: #69a9e6;
-}
+	margin-top: 30px;}
 
-.templaterow	{ margin: 0px 30px; }
+.templaterow { margin: 0px 30px; }
 .servicerow	{ margin: 0px; }
 .blok	{ position: absolute; }
 .hex	{ width: 20%; float: left; }
@@ -400,9 +400,12 @@ a.menu-toggle-btn {
 	text-align: center; 
 	font-size: 16px; 
 	width: 200px; 
-	margin-bottom:10%;
+	margin-bottom:11px;
 	}
-
+#thirdImageRow {
+	margin-top: 190px;
+	margin-bottom: 190px;
+}
 .loadmore button{ 
 	border: none; 
 	background: #ffffff; 
@@ -443,17 +446,17 @@ and (max-width : 419px)	{
 @media (min-width : 420px) 
 and (max-width : 559px)	{
 	.hex	{ width: 50%; float: left; }
-	.templaterow	{ margin: 0; }
+	.templaterow	{ margin: 0 5%; }
 	.hexagon2 
 	{
 	position: absolute;
-	width: 150px;
-	height: 175px;
+	width: 130px;
+	height: 155px;
 	top: 0px;
 	}
 	.hex-top1	{ margin-top: 300px; }
 	.hex-top2	{ margin-top: 130px; margin-left: 25%; }
-	.hex-top3		{ margin-top: 130px; }
+	.hex-top3	{ margin-top: 130px; }
 	.gallerytop	{ margin-top: 32%; }
 	.loadmore	{ margin-top: 50%; }
 	.blok	{ left: 22%; }
@@ -482,6 +485,10 @@ and (max-width : 559px)	{
 	.footer .hex_footer	{ float: left; }
 	.hexagon-a	{ margin-left: 5px; }
 	.hexagon-a a	{ min-width: 190px; }
+	#thirdImageRow {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
 
 }
 @media(min-width:768px) and (max-width: 991px){ 
@@ -576,11 +583,11 @@ and (max-width : 559px)	{
 	margin: 0 auto; 
 	padding: 7px 0px; 
 	background: #69a9e6; 
-	margin-top: 15%; 
+	margin-top: 77px; 
 	text-align: center; 
 	font-size: 16px; 
 	width: 200px; 
-	margin-bottom:10%;
+	margin-bottom: 88px;
 }
 
 #returnhome button{ 

@@ -5,27 +5,31 @@ jQuery(document).ready(function($){
 		$('.overlay a').remove();
 		$("#menu-container .content").hide();
 		$("#menu-container .homepage").hide();
-		var eventSelection = $(this).attr('at'); 
-		var url = '../../assets/images/gallery/' + eventSelection + '/';
-		var smallUrl = '../../assets/images/gallery/' + eventSelection + '/square/';
-		for (var image = 1; image <= 18; image++) {
-			galleryPicture = url + image + '.jpg';
-			smallPicture = smallUrl + image + '.jpg';
-			$('.overlay').append(`<a href="${galleryPicture}"  data-rel="lightbox" class="fa fa-expand"></a>`);
-			$('.hexagon-in2').css("background-image", "url(" + smallPicture +")");
-			console.log(smallPicture);
-			console.log(galleryPicture);
-		};
-		
+		var navigation = $(this).attr('at'); 
+		var url = '../../assets/images/gallery/' + navigation + '/';
+		var hexUrl = url + 'square/';
+		appendGallery(url, hexUrl);
 		return false;
 	});
 
+	function appendGallery(url, hexUrl) {
+		for (i = 1; i <= 18; i++) {
+			pic = url + i + '.jpg';
+			hexPic = hexUrl + i + '.jpg';
+			$.each([pic], () => {
+				$('.overlay').append(`<a href="${pic}"  data-rel="lightbox" class="fa fa-expand"></a>`);
+				$('.hexagon-in2').css("background-image", "url(" + hexPic +")");
+		});
+			console.log($.type(pic));
+			console.log(pic);
+		};
+		
+	}
 
 	$(".main_menu a.home, .responsive_menu a.home").click(function(){
 		$("#menu-container .homepage").addClass("animated fadeInDown").show();
 		return false;
 	});
-
 	/************** Gallery Hover Effect *********************/
 	$(".overlay").hide();
 
