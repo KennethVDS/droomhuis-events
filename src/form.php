@@ -1,4 +1,5 @@
 <?php
+
 if(filter_has_var(INPUT_POST, 'submit')){
     // Get Form Data
     $name = htmlspecialchars($_POST['name']);
@@ -23,7 +24,6 @@ if(filter_has_var(INPUT_POST, 'submit')){
                 <h4>Phone</h4><p>'.$phone.'</p>
                 <h4>Interest</h4>'.$interest.'</p>
                 <h4>Message</h4><p>'.$message.'</p>
-                <button onclick="window.location.href = `../../index.html`;"><span>Return<i class="fa fa-home"></i></span></button>
             ';
             print_r($body);
             if(mail($toEmail, $subject, $body)){

@@ -636,7 +636,7 @@ input, select, textarea {
 	.box > .modal {
 		position: relative;
 		float: right;
-
+		
 	}
 	.box > #mainArticle {
 		display: flex;
@@ -669,6 +669,7 @@ input, select, textarea {
 			z-index: 1;
 			overflow: auto;
 			width: 50%;
+			margin-top: 25vh;
 			background-color: rgb(0,0,0); 
 			background-color: rgba(0,0,0,0.4); 
 		}
@@ -676,7 +677,6 @@ input, select, textarea {
 		#videoModal > .modal-content {
 			background-color: #ffffff;
 			margin: 0;
-			padding: 3px;
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
