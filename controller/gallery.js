@@ -5,25 +5,24 @@ jQuery(document).ready(function($){
 		$('.overlay a').remove();
 		$("#menu-container .content").hide();
 		$("#menu-container .homepage").hide();
-		var navigation = $(this).attr('at'); 
-		var url = '../../assets/images/gallery/' + navigation + '/';
-		var hexUrl = url + 'square/';
-		appendGallery(url, hexUrl);
+		const navigation = $(this).attr('at');
+		const url = new Object();
+		url.href = '../../assets/images/gallery/' + navigation + '/';
+		url.hex = url.href + 'square/';
+		appendGallery(url);
 		return false;
 	});
 
-	function appendGallery(url, hexUrl) {
-		for (i = 1; i <= 18; i++) {
-			pic = url + i + '.jpg';
-			hexPic = hexUrl + i + '.jpg';
-			$.each([pic], () => {
-				$('.overlay').append(`<a href="${pic}"  data-rel="lightbox" class="fa fa-expand"></a>`);
-				$('.hexagon-in2').css("background-image", "url(" + hexPic +")");
-		});
-			console.log($.type(pic));
+	function appendGallery(url) {
+		var pic
+		var hexPic
+		for (i = 1; i <= 27; i++) {
+			pic = url['href'] + i + '.jpg';
+			hexPic = url['hex'] + i + '.jpg';
 			console.log(pic);
+			$('.overlay').append(`<a href="${pic}"  data-rel="lightbox" class="fa fa-expand"></a>`);
+			$('.hexagon-in2').css("background-image", "url(" + hexPic +")");
 		};
-		
 	}
 
 	$(".main_menu a.home, .responsive_menu a.home").click(function(){
