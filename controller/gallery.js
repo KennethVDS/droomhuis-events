@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 	function appendGallery(url) {
 		var pic
 		var hexPic
-		for (i = 1; i <= 27; i++) {
+		for (i = 1; i <= 9; i++) {
 			pic = url['href'] + i + '.jpg';
 			hexPic = url['hex'] + i + '.jpg';
 			console.log(pic);

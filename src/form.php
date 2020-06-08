@@ -36,4 +36,4 @@ if(filter_has_var(INPUT_POST, 'submit')){
     } else {
         print_r('Please fill in all fields');
     }
-}
+}        
