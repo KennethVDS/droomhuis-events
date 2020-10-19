@@ -16,13 +16,13 @@ jQuery(document).ready(function($){
 	function appendGallery(url) {
 		var pic
 		var hexPic
-		for (i = 1; i <= 9; i++) {
+		for (let i = 1; i <= 14; i++) {
 			pic = url['href'] + i + '.jpg';
 			hexPic = url['hex'] + i + '.jpg';
 			console.log(pic);
-			$('.overlay').append(`<a href="${pic}"  data-rel="lightbox" class="fa fa-expand"></a>`);
-			$('.hexagon-in2').css("background-image", "url(" + hexPic +")");
 		};
+		$('.overlay').append(`<a href="${pic}"  data-rel="lightbox" class="fa fa-expand"></a>`);
+		$('.hexagon-in2').css("background-image", "url(" + hexPic +")");
 	}
 
 	$(".main_menu a.home, .responsive_menu a.home").click(function(){
